@@ -81,7 +81,7 @@ Målet med oppgaven er å lage en to-do app:
 
 # Skisser
 ## Frontend ([Figma](https://www.figma.com/design/BQHHv4M9cZVGv5ZdFa2Ivm/ToDo-List---Planning?node-id=0-1&t=57C8mcIJcz8sNIPC-1))
-INSERT IMAGE HERE
+![image](https://github.com/user-attachments/assets/64786f8a-4ae9-456b-a7ee-ad10bde1897f)
 ### Setups
 - Severities Setup - Dette er en setup app hvor du kan sette opp severities som kan bli brukt i hovedappen.
 - States Setup - Dette er en setup app hvor du kan sette opp stater som kan bli brukt i hovedappen. En har mulighet for å sette "Is Concluded" eller "Is Removed" som er nødvendig for funksjonalitet.
@@ -92,7 +92,7 @@ INSERT IMAGE HERE
 - Items - Dette er hovedappen. Det er her du kan åpne modalene. Du kan lage, endre, slette, og ha en oversikt over, alle oppgavene.
 ## Backend
 ### Tabeller ([DrawSQL](https://drawsql.app/teams/omega365-1/diagrams/todo-list-planning))
-INSERT IMAGE HERE
+![image](https://github.com/user-attachments/assets/e658fc39-71f6-4e26-8463-43fe2f29d8a5)
 - System_Persons - Dette er en tabell i systemet som jeg ikke kommer til å lage. Det er en tabell som inneholder informasjon om brukerne på systemet.
 - ToDo_Subscribers - Denne tabellen inneholder en liste av folk som har tilgang til spesifikke lister, og hvilke tilganger de har (Items / Subscribers). Hvis en person ligger i den tabellen, har den personen automatisk tilgang til å se listen.
 - ToDo_Lists - Dette er hovedtabellen. Denne tabellen inneholder alle to-do lister som finnes. En kan slette en liste, men bare via et bitfelt "IsRemoved." Da blir den ikke faktisk slettet, og en kan legge den tilbake hvis en vil.
