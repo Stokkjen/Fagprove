@@ -81,7 +81,7 @@ Målet med oppgaven er å lage en to-do app:
 
 # Skisser
 ## Frontend ([Figma](https://www.figma.com/design/BQHHv4M9cZVGv5ZdFa2Ivm/ToDo-List---Planning?node-id=0-1&t=57C8mcIJcz8sNIPC-1))
-![image](https://github.com/user-attachments/assets/64786f8a-4ae9-456b-a7ee-ad10bde1897f)
+![image](https://github.com/user-attachments/assets/b85311f5-04ea-4481-93c6-183d5a0be5cb)
 ### Setups
 - Severities Setup - Dette er en setup app hvor du kan sette opp severities som kan bli brukt i hovedappen.
 - States Setup - Dette er en setup app hvor du kan sette opp stater som kan bli brukt i hovedappen. En har mulighet for å sette "Is Concluded" eller "Is Removed" som er nødvendig for funksjonalitet.
