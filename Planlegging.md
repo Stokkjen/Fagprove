@@ -4,8 +4,8 @@ Målet med oppgaven er å lage en to-do app:
 - En skal ha god kontroll over lister og oppgaver.
 - Listene er brukerspesifikke, men deling må være mulig.
 - Det må være mulighet for å sette tidsfrister for oppgaver.
-- Det ble ikke super spesifisert, men appen må ha notifikasjoner tilpasset appen.
-  - Det ble nevnt at notifikasjonene måtte være noe av det følgene:
+- Det ble ikke spesifisert i detaljer, men appen må ha notifikasjoner tilpasset.
+  - Det ble nevnt at notifikasjonene kunne være noe av det følgene:
     - Noe enkelt i selve appen.
     - Pushvarsel på mobil.
     - E-post påminnelser.
@@ -14,20 +14,20 @@ Målet med oppgaven er å lage en to-do app:
 
 # Arbeid
 ## Fremgangsmåte:
-- Planlegging
-  - Jeg bruker DrawSQL for å tenke opp og illustrere en datamodell (hovedsaklig tabeller) som tilpasser selve oppgaven.
-  - Da tenker jeg ut eventuelle views for å få samlet data på en sikker og fornuftig måte.
-  - Det samme gjelder for prosedyrer, for å få funksjonaliteten som er nødvendig.
-  - Så lager jeg illustrasjoner av appene og modalene ved hjelpen av Figma.
-- Datamodell
+- Planlegging:
+  - Jeg bruker Figma for å lage illustrasjoner av appene og modalene.
+  - Jeg bruker DrawSQL for å illustrere en datamodell (hovedsaklig tabeller) som tilpasser selve oppgaven.
+  - Jeg tenker ut eventuelle views for å få samlet data på en sikker og fornuftig måte.
+    - Det samme gjelder for prosedyrer, for å få funksjonaliteten som er nødvendig.
+- Datamodell:
   - Når jeg har en klar idé over hvordan ting skal fungere og se ut, og har levert inn planleggingen, definerer jeg alle tabellene i SQL.
-- Sikkerhet
-  - Da lager jeg roller, moduler og capabilities for å komme i gang med sikkerhet.
-  - Da implementerer sikkerhet i views til tabellene og triggerne deres.
-- Apper
-  - Da lager jeg setup appene, siden disse er små og kjappe å lage, og en viktig del av systemet. Da følger jeg bare Figma skissen og bruker eventuelle views og prosedyrer.
-  - Så begynner jeg å jobbe på hovedappen.
-- Til slutt
+- Sikkerhet:
+  - Jeg lager roller, moduler og capabilities for å komme i gang med sikkerhet.
+  - Når det er gjort, implementererer jeg sikkerhet i views til tabellene og triggerne deres.
+- Apper:
+  - Jeg lager setup appene, siden disse er små og kjappe å lage, og en viktig del av systemet. Da følger jeg bare Figma skissen og bruker eventuelle views og prosedyrer.
+  - Når jeg har laget setup appene, jobber jeg på hovedappen.
+- Til slutt:
   - Hvis nødvendig kan det hende at jeg går tilbake senere å gjør småendringer hvis noe dukket opp.
   - Når jeg er ferdig med det og hvis jeg får tid, er det egentlig hovedsaklig bare for meg å legge til noen bonuser hvis jeg får tid til det.
   - Når presentasjonen nærmer seg, forbereder jeg meg.
