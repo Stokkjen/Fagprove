@@ -1,6 +1,16 @@
 # Oppgave
 ## Mål
-Målet med oppgaven er å lage en app for å ha kontroll på reservasjoner for en restaurant, og for gjestene å legge til eller kansellere reservasjoner. Denne restauranten kan kun ha 12 gjester til gangen, men det ble ikke spesifisert noe med hvordan bordene virker. Da tar jeg og antar at de setter i sammen bord som har plass til 2 stykk sammen, slik at hvis det er 4 blir det 2 bord, hvis det er 5 blir det 3 bord. De har 6 bord, som gjør slik at 12 gjester holder maksimum. Men, det kan hende at alle bordene blir brukt og det ikke er hele 12 gjester.
+Målet med oppgaven er å lage en to-do app:
+- En skal ha god kontroll over lister og oppgaver.
+- Listene er brukerspesifikke, men deling må være mulig.
+- Det må være mulighet for å sette tidsfrister for oppgaver.
+- Det ble ikke super spesifisert, men appen må ha notifikasjoner tilpasset appen.
+  - Det ble nevnt at notifikasjonene måtte være noe av det følgene:
+    - Noe enkelt i selve appen.
+    - Pushvarsel på mobil.
+    - E-post påminnelser.
+    - Evt. noe annet liknende.
+  - Jeg tenker å begynne med noe enkelt i selve appen, hvor hver gang du laster inn en liste så får du notifikasjoner rett der. Senere kan jeg nok utvide på dette, og legge til e-post påminnelser.
 
 # Arbeid
 ## Fremgangsmåte:
