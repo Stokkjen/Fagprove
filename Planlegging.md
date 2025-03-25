@@ -95,7 +95,7 @@ INSERT IMAGE HERE
 ### Tabeller
 - System_Persons - Dette er en tabell i systemet som jeg ikke kommer til å lage. Det er en tabell som inneholder informasjon om brukerne på systemet.
 - ToDo_Subscribers - Denne tabellen inneholder en liste av folk som har tilgang til spesifikke lister, og hvilke tilganger de har (Items / Subscribers). Hvis en person ligger i den tabellen, har den personen automatisk tilgang til å se listen.
-- ToDo_Lists - Dette er hovedtabellen. Denne tabellen inneholder alle to-do lister som finnes.
+- ToDo_Lists - Dette er hovedtabellen. Denne tabellen inneholder alle to-do lister som finnes. En kan slette en liste, men bare via et bitfelt "IsRemoved." Da blir den ikke faktisk slettet, og en kan legge den tilbake hvis en vil.
 - ToDo_Items - Dette er en tabell over alle oppgavene. Hver oppgave må knyttes til en liste. Oppavene må ha en tittel, og kan ha en beskrivelse og frist. Oppgavene kan også ha en stat og en alvorlighetsgrad.
 - ToDo_States - Dette er en tabell over statene oppgavene kan ha. Her finnes det felter som sier om staten betyr at oppgaven er konkludert eller fjernet, for å få funksjonaliteten på plass.
 - ToDo_Severities - Dette er en tabell over alvorlighetsgrad.
@@ -105,6 +105,8 @@ INSERT IMAGE HERE
 - ToDo_MyCapabilities - Her gjør jeg en sjekk mot roller og capabilities brukeren har, så en får se om brukeren kan jobbe med setup appene, eller om de kan jobbe i hovedappen.
 ### Prosedyrer
 - Jeg ser foreløpig ikke noen potensielle prosedyrer jeg kan bruke.
+### Triggere
+- ToDo_ListsITrig - Kjøres når du lager en liste. Her skal triggeren automatisk legge til en rad i ToDo_Subscribers, hvor den som la til listen skal automatisk få full tilgang til listen.
 
 # Kilder
 ## Informasjonskilder:
