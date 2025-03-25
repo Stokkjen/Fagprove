@@ -10,22 +10,27 @@ Målet med oppgaven er å lage en to-do app:
     - Pushvarsel på mobil.
     - E-post påminnelser.
     - Evt. noe annet liknende.
-  - Jeg tenker å begynne med noe enkelt i selve appen, hvor hver gang du laster inn en liste så får du notifikasjoner rett der. Senere kan jeg nok utvide på dette, og legge til e-post påminnelser.
+  - Jeg tenker å begynne med noe enkelt i selve appen, hvor hver gang du laster inn en liste så får du notifikasjoner rett der. Senere kan jeg nok utvide på dette, og legge til e-post påminnelser, men det kan ta litt tid, så det er ingen garanti.
 
 # Arbeid
 ## Fremgangsmåte:
-- Først vil jeg bruke DrawSQL for å tenke opp og illustrere en datamodell (hovedsaklig tabeller) som tilpasser selve oppgaven.
-- Jeg kommer også til å tenke ut eventuelle views for å få samlet data på en sikker og fornuftig måte.
-- Det samme gjelder for prosedyrer, for å få funksjonaliteten som er nødvendig.
-- Så kommer jeg til å lage illustrasjoner av appene og modalene ved hjelpen av Figma.
-- Når jeg har en klar idé over hvordan ting skal fungere og se ut, og har levert inn planleggingen, begynner jeg med å definere alle tabellene i SQL.
-- Da lager jeg roller, moduler og capabilities for å komme i gang med sikkerhet.
-- Da vil jeg begynne å implementere sikkerhet i views til tabellene og triggerne deres.
-- Da begynner jeg på setup appene, siden disse er små og kjappe å lage, og en viktig del av systemet. Da følger jeg bare Figma skissen og bruker eventuelle views og prosedyrer.
-- Da begynner jeg å jobbe på hovedappen.
-- Hvis nødvendig kan det hende at jeg går tilbake senere å gjør småendringer hvis noe dukket opp.
-- Når jeg er ferdig med det og hvis jeg får tid, er det egentlig hovedsaklig bare for meg å legge til noen bonuser hvis jeg får tid til det.
-- Når presentasjonen nærmer seg begynner jeg å forberede meg.
+- Planlegging
+  - Jeg bruker DrawSQL for å tenke opp og illustrere en datamodell (hovedsaklig tabeller) som tilpasser selve oppgaven.
+  - Da tenker jeg ut eventuelle views for å få samlet data på en sikker og fornuftig måte.
+  - Det samme gjelder for prosedyrer, for å få funksjonaliteten som er nødvendig.
+  - Så lager jeg illustrasjoner av appene og modalene ved hjelpen av Figma.
+- Datamodell
+  - Når jeg har en klar idé over hvordan ting skal fungere og se ut, og har levert inn planleggingen, definerer jeg alle tabellene i SQL.
+- Sikkerhet
+  - Da lager jeg roller, moduler og capabilities for å komme i gang med sikkerhet.
+  - Da implementerer sikkerhet i views til tabellene og triggerne deres.
+- Apper
+  - Da lager jeg setup appene, siden disse er små og kjappe å lage, og en viktig del av systemet. Da følger jeg bare Figma skissen og bruker eventuelle views og prosedyrer.
+  - Så begynner jeg å jobbe på hovedappen.
+- Til slutt
+  - Hvis nødvendig kan det hende at jeg går tilbake senere å gjør småendringer hvis noe dukket opp.
+  - Når jeg er ferdig med det og hvis jeg får tid, er det egentlig hovedsaklig bare for meg å legge til noen bonuser hvis jeg får tid til det.
+  - Når presentasjonen nærmer seg, forbereder jeg meg.
 ## Timeplan
 ### 25.03.25 - Tirsdag (7.5t):
 - Gjennomgang av fagprøve.
