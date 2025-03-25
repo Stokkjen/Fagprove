@@ -80,27 +80,30 @@ Målet med oppgaven er å lage en to-do app:
 - Figma - for å tegne hvordan appene skal omtrent se ut.
 
 # Skisser
-## Apps ([Figma](https://www.figma.com/design/BQHHv4M9cZVGv5ZdFa2Ivm/ToDo-List---Planning?node-id=0-1&t=57C8mcIJcz8sNIPC-1))
+## Apper ([Figma](https://www.figma.com/design/BQHHv4M9cZVGv5ZdFa2Ivm/ToDo-List---Planning?node-id=0-1&t=57C8mcIJcz8sNIPC-1))
 INSERT IMAGE HERE
+### Setups
 - Severities Setup - Dette er en setup app hvor du kan sette opp severities som kan bli brukt i hovedappen.
 - States Setup - Dette er en setup app hvor du kan sette opp stater som kan bli brukt i hovedappen. En har mulighet for å sette "Is Concluded" eller "Is Removed" som er nødvendig for funksjonalitet.
+### Modaler
 - Manage Subscribers Modal - Dette er en modal som åpnes opp via hovedappen. Her kan du se og modifisere subscribers, altså hvem som har tilgang til hva.
 - To-Do Lists Modal - Dette er en modal som åpnes opp via hovedappen. Her kan du se en oversikt over alle lister du i det hele tatt har tilganger til, og du vil få muligheten til å åpne listen.
+### Apper
 - Items - Dette er hovedappen. Det er her du kan åpne modalene. Du kan lage, endre, slette, og ha en oversikt over, alle oppgavene.
 ## Datamodell ([DrawSQL](https://drawsql.app/teams/omega365-1/diagrams/todo-list-planning))
 INSERT IMAGE HERE
-## Tabeller
+### Tabeller
 - System_Persons - Dette er en tabell i systemet som jeg ikke kommer til å lage. Det er en tabell som inneholder informasjon om brukerne på systemet.
 - ToDo_Subscribers - Denne tabellen inneholder en liste av folk som har tilgang til spesifikke lister, og hvilke tilganger de har (Items / Subscribers). Hvis en person ligger i den tabellen, har den personen automatisk tilgang til å se listen.
 - ToDo_Lists - Dette er hovedtabellen. Denne tabellen inneholder alle to-do lister som finnes.
 - ToDo_Items - Dette er en tabell over alle oppgavene. Hver oppgave må knyttes til en liste. Oppavene må ha en tittel, og kan ha en beskrivelse og frist. Oppgavene kan også ha en stat og en alvorlighetsgrad.
 - ToDo_States - Dette er en tabell over statene oppgavene kan ha. Her finnes det felter som sier om staten betyr at oppgaven er konkludert eller fjernet, for å få funksjonaliteten på plass.
 - ToDo_Severities - Dette er en tabell over alvorlighetsgrad.
-## Views
+### Views
 - ToDo_Lists - I dette viewet har jeg lyst til å få med alle listene, men jeg har lyst til å inkludere tilganger brukeren har i følge ToDo_Subscribers tabellen, og fremgang, kalkulert basert på antall oppgaver i listen og hvor mange av de er fullført.
 - ToDo_Items - Her har jeg lyst til å få opp alle oppgavene, men siden tabellen bruker ID-er for stat og alvorlighetsgrad, så må jeg inkludere navn.
 - ToDo_MyCapabilities - Her gjør jeg en sjekk mot roller og capabilities brukeren har, så en får se om brukeren kan jobbe med setup appene, eller om de kan jobbe i hovedappen.
-## Prosedyrer
+### Prosedyrer
 - Jeg ser foreløpig ikke noen potensielle prosedyrer jeg kan bruke.
 
 # Kilder
