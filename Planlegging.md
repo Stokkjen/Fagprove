@@ -80,7 +80,7 @@ Målet med oppgaven er å lage en to-do app:
 - Figma - for å tegne hvordan appene skal omtrent se ut.
 
 # Skisser
-## Apper ([Figma](https://www.figma.com/design/BQHHv4M9cZVGv5ZdFa2Ivm/ToDo-List---Planning?node-id=0-1&t=57C8mcIJcz8sNIPC-1))
+## Frontend ([Figma](https://www.figma.com/design/BQHHv4M9cZVGv5ZdFa2Ivm/ToDo-List---Planning?node-id=0-1&t=57C8mcIJcz8sNIPC-1))
 INSERT IMAGE HERE
 ### Setups
 - Severities Setup - Dette er en setup app hvor du kan sette opp severities som kan bli brukt i hovedappen.
@@ -90,9 +90,9 @@ INSERT IMAGE HERE
 - To-Do Lists Modal - Dette er en modal som åpnes opp via hovedappen. Her kan du se en oversikt over alle lister du i det hele tatt har tilganger til, og du vil få muligheten til å åpne listen.
 ### Apper
 - Items - Dette er hovedappen. Det er her du kan åpne modalene. Du kan lage, endre, slette, og ha en oversikt over, alle oppgavene.
-## Datamodell ([DrawSQL](https://drawsql.app/teams/omega365-1/diagrams/todo-list-planning))
+## Backend
+### Tabeller ([DrawSQL](https://drawsql.app/teams/omega365-1/diagrams/todo-list-planning))
 INSERT IMAGE HERE
-### Tabeller
 - System_Persons - Dette er en tabell i systemet som jeg ikke kommer til å lage. Det er en tabell som inneholder informasjon om brukerne på systemet.
 - ToDo_Subscribers - Denne tabellen inneholder en liste av folk som har tilgang til spesifikke lister, og hvilke tilganger de har (Items / Subscribers). Hvis en person ligger i den tabellen, har den personen automatisk tilgang til å se listen.
 - ToDo_Lists - Dette er hovedtabellen. Denne tabellen inneholder alle to-do lister som finnes. En kan slette en liste, men bare via et bitfelt "IsRemoved." Da blir den ikke faktisk slettet, og en kan legge den tilbake hvis en vil.
