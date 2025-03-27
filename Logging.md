@@ -12,3 +12,10 @@
 - Begynt på hoved app.
 - Laget alle grids.
   - Avvik: I figma skissene brukte jeg checkbokser for å endre bit felter. Grunnet universell utforming og mobil i tanken har jeg gjort slik at du trykker på en klar og farget knapp (med dynamisk tekst for å gjøre det lett å forstå). Det kan hjelpe ikke bare med forståelse, men siden knappen er relativt stor, mens checkboksen liten, er det også lettere å trykke på.
+## 27.03.25 - Torsdag
+- Jobbet med hovedappen.
+  - Hindring: Jeg har hatt store utfordringer med å få appen til å ha et intuitivt design, og jeg har også brukt mye tid på å finne ut av hvordan jeg skriver frontenden for å tilpasse det. Dette er noe som har tatt mesteparten av dagen, og jeg er fortsatt langt fra ferdig.
+- Jeg har også laget til 2 tabeller. Disse står ikke i planleggingen min, men de er nødvendige tabeller for å få notifikasjoner på plass. (ToDo_Notifications og ToDo_NotificationSubscribers.)
+  - Sikkerhet er på plass også.
+- Jeg har laget en prosedyre for å få funksjonaliteten til notifikasjoner til å virke. (ToDo_SendNotifications.) Denne inserter informasjon om en epost inn i en tabell, som da blir sendt videre til mail via en jobb som aktiverer et c# skript.
+- Til slutt har jeg lagt til en grid for notifikasjonene.
