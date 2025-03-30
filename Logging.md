@@ -25,3 +25,8 @@
 - For mobil har jeg gjort lister om til kort for samme grunn.
 - Begynt med å endre hvordan notifikasjoner virket. Har laget 2 views, som ikke sto i planleggingen, som er nødvendig for å vise notifikasjoner i appen.
 ## (29-30).03.25 - Helg
+- Jobbet mye med frontend delen.
+  - Gjort slik at alt på mobil bruker cards.
+  - Lagt til all krevende funksjonalitet, lik som det var i griddene.
+    - Det er noen mangler her jeg vil fikse de neste to dagene.
+  - Har lagt til notifikasjonsbjeller for oversikt over lister og oversikt over oppgaver.
