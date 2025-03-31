@@ -43,22 +43,43 @@ Triggere kjører sikkerhetssjekk omtrent likt som sikkerhets viewet til tabellen
 
 ## Arkitektur
 ### Frontend
-- Setup Apper
-  - Severities
-  - States
-- Hoved Apper
-  - Lists
-  - Tasks
+- Setup Apper (Tilgjengelig for de som har "To Do Setup Administrator" rollen)
+  - Severities - Her kan en legge til "Severities" som vises opp i lista når, i hovedappene, en velger en severity.
+    - "Severities" er for eksempel: "Critical", "Low", "High" etc.
+  - States - Det samme som "Severities", bare for "States".
+    - "States" er for eksempel: "To Do", "Deleted", "Finished" etc.
+- Hoved Apper (Tilgjengelig for de som har "To Do Customer" rollen)
+  - Lists - Dette er appen hvor en har en oversikt over alle listene. Det er også en oversikt over folk som har tilgang til lista og hva tilgang de har. Hvis en er på telefon, vil denne informasjonen vises som "kort", som gjør det lettere å observere på telefon. For PC, vil informasjonen vises i grid. I tillegg, siden PC har mye større skjerm, få "Tasks" appen ved siden av.
+  - Tasks - Her kan en lage, se, redigere og slette oppgaver. En kan også sette notifikasjoner på en oppgave (så lenge den har en frist), hvor en setter notifikasjonen til å bli aktiv så så lenge før fristen. Når notifikasjonen da er aktiv, vil den dukke opp i appen. I tillegg, vil "Lists" appen også få en notifikasjonsliste over lister som har en eller flere oppgaver som har en aktiv notifikasjon.
 ### Backend (SQL)
 - Tabeller
-  - 
+  - Lists - En oversikt over lister. Den har bare tittel, og et bitfelt som sier om listen er fjernet eller ikke.
+  - Subscribers - Folk som har tilgang til lister, og hvilken tilgang.
+  - Tasks - Her står det informasjon om oppgaven, som tittel, beskrivelse og frist, og i tillegg kan du legge til en stat og alvorlighetsgrad.
+  - States - Her kan du sette en stat, som for eksempel: "To Do", "Deleted", "Finished" etc.
+  - Severities - Her ligger det alvorlighetsgrader, som for eksempel: "Critical", "Low", "High" etc.
+  - Notifications - Her ligger alle notifikasjoner, altså notifikasjoner du kan legge til på en oppgave for å følge med på den.
+  - NotificationSubscribers - Her kobler vi en person opp mot en notifikasjon. Så da kan flere ha samme notifikasjoner.
 - Views
-  - 
+  - Lists - Denne velger fra "Lists" tabellen, men inkluderer for eksempel "ProgressPercentage", "IsCompleted", og noen andre kjekke ting som tilganger (i følge "Subscribers" tabellen)
+  - ListsNotifications - Dette viewet velger alle aktive notifikasjoner, og simplifiserer de til en per liste. Da kan du, i "Lists" appen, se alle lister som har en aktiv notifikasjon.
+  - MyCapabilities - Alt denne gjør er å sjekke hvilke capabilities du har.
+  - Notifications - Velger fra "Notifications" tabellen, men den bruker også "NotificationSubscribers" for å sjekke om du følger med på notifikasjonen.
+  - Subscribers - Velger fra "Subscribers" tabellen, men inkluderer sjekker for om det er du som er subscriber, eller om subscriberen er den som har laget listen.
+  - Tasks - Velger rett fra "Tasks" tabellen, men inkluderer stat og alvorlighetsgrad, og har i tillegg en sjekk på om oppgaven er fjernet eller fullført.
+  - TasksNotifications - Returnerer alle aktive notifikasjoner, og hvilken oppgave den tilhører.
+- Prosedyrer
+  - EraseList - Med tanke på "rett til å bli glemt", har jeg laget en prosedyre som sletter alt fra en liste.
+  - SendNotifications - Ubrukt grunnet manglet forståelse, men virker. Denne skulle bli kjørt av en jobb hver time, som sjekker om det er noen nye notifikasjoner tilgjengelig. Hvis det er det, så sender den det ut på mail til alle som har valgt å følge med på notifikasjonen. Men igjen, hvordan ting faktisk funker bak vet jeg ikke nok av, så jeg byttet dette ut med bjellene i appen.
 
 ## Avvik og hindringer
 For backend holdt jeg meg godt til planen. Det ble noen ting ekstra jeg måtte gjøre, men jeg vil ikke si det var noen avvik, og det ble ikke mange hindringer. Men, i frontend, ble det mange hindringer, og ting ser helt annerledes ut for telefon enn i planen min.
 - Det ble mange flere views enn planlagt i planen. Dette var nødvendig for å vise nyttig informasjon.
 - I selve appen hadde jeg planlagt å alt i en app (utenom setup appene). Jeg dele hele greia i to apper, altså en for listene, og en for oppgavene.
-- 
 
 ## Planen videre
+- Hvis en person har fullført en oppgave som har en aktiv notifikasjon, vil jeg at alle som hadde meldt seg på den notifikasjonen skal få en ny notifikasjon hvor det står at noen fullførte det. Jeg hadde en ide for dette som involverer en cache tabell, men fikk ikke tid.
+- Notifikasjonene som dukker opp når du trykker bjellene burde kunne trykkes (for å åpne en liste eller oppgave) for å få en mye simplere opplevelse.
+- Notifikasjons systemet burde generelt sett være mer brukervennlig, altså å sende mail eller sms i stedenfor. Dette fikk jeg til å gjøre, men jeg skrudde det av, siden jeg forstår ikke helt hvordan det funker, så jeg gikk for det jeg har nå, som jeg kan "eie", siden jeg forstår det.
+- Frontenden endte ikke opp med å være veldig lett å forstå. Det er noen ting på mobil som kunne bli gjort klarere, og spesielt på PC, kunne ting vært annerledes.
+- Legge til tags, slik at en kan lettere filtrere og sortere ting.
