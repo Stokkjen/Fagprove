@@ -30,3 +30,10 @@
   - Lagt til all krevende funksjonalitet, lik som det var i griddene.
     - Det er noen mangler her jeg vil fikse de neste to dagene.
   - Har lagt til notifikasjonsbjeller for oversikt over lister og oversikt over oppgaver.
+## 31.03.25 - Mandag
+- Fikset mange bugs / feil.
+- Lagt til ting som kan være nyttig.
+  - Hovedgreia her er "Erase," en ny knapp jeg har lagt til grunnet lovverk. En skal ha "retten til å bli glemt," så jeg har gjort slik at den som lager en liste får nå muligheten til å ta en full slett av hele lista. (Det kommer opp advarsel.)
+- Ryddet opp i koden.
+- Gjort en del testing.
+- Begynt litt på systemdokumentasjon.
