@@ -52,39 +52,39 @@
   <th>Hva skjedde</th>
   <th>Status</th>
   <tr>
-    <td>Fjerning, skjules men kan bli vist og lagt til</td>
+    <td>Fjerning skjules men kan bli vist og lagt til</td>
     <td><img src="https://github.com/user-attachments/assets/14ad6b24-6301-4849-a666-70e686e8a3d8"/></td>
-    <td></td>
-    <td>✅</td>
+    <td>Å trykke på søppelbøtte fungerer, men den skjules ikke med en gang, og jeg må gjøre en refresh først. Dette tror jeg virker fint da, fordi da forsvinner den ikke bare, som kan være forvirrende. Det går også ann å vise alle fjernte rader og legge dem tilbake</td>
+    <td>⚠️</td>
   </tr>
   <tr>
     <td>Kan slette liste helt</td>
     <td><img src="https://github.com/user-attachments/assets/5cc2888b-1eff-423f-9f71-41d5fdfa8d18"/></td>
-    <td></td>
+    <td>Når en liste er fjernet, kan du trykke søppelbøtta igjen, og den sletter lista helt selv om filtre inkluderer alt</td>
     <td>✅</td>
   </tr>
   <tr>
     <td>Kan lage ny liste</td>
     <td><img src="https://github.com/user-attachments/assets/f065fa44-2498-4ac3-9a09-baef36bf6c91"/></td>
-    <td></td>
+    <td>Å lage ny liste fungerte fint</td>
     <td>✅</td>
   </tr>
   <tr>
     <td>Kan legge til og fjerne deling</td>
     <td><img src="https://github.com/user-attachments/assets/9d6d3d49-a0b4-4630-92de-afada741afd0"/></td>
-    <td></td>
+    <td>Jeg kunne legge til en person og slette dem uten problemer</td>
     <td>✅</td>
   </tr>
   <tr>
     <td>Ny liste lager automatisk deling for deg</td>
     <td><img src="https://github.com/user-attachments/assets/9c25e855-2368-4f71-89b4-f13bef810b77"/></td>
-    <td></td>
+    <td>Å lage ny liste lager automatisk en "Subscriber" for deg med full tilgang</td>
     <td>✅</td>
   </tr>
   <tr>
     <td>Kan åpne liste</td>
     <td><img src="https://github.com/user-attachments/assets/2b5faba7-7b6f-46ea-bb7f-6efe0590f2da"/></td>
-    <td></td>
+    <td>Å trykke "Open List" åpner "Tasks" appen, hvor informasjon om listen ligger, så dette funket</td>
     <td>✅</td>
   </tr>
 </table>
@@ -98,37 +98,37 @@
   <tr>
     <td>Kan lage ny oppgave</td>
     <td><img src="https://github.com/user-attachments/assets/f9bdb2c4-3876-424d-bda9-9ab17375054a"/></td>
-    <td></td>
+    <td>Å lage ny oppgave funket uten problemer</td>
     <td>✅</td>
   </tr>
   <tr>
     <td>Kan slette oppgave</td>
     <td><img src="https://github.com/user-attachments/assets/ffe2e1b7-a8b8-49c5-aac3-a5ef3ec50930"/></td>
-    <td></td>
+    <td>Denne kan være litt tricky, men den virket. Går du inn på "Open Task", så kan du sette "State" til "Deleted". Da skjules den med mindre du har på "Include Removed"</td>
     <td>✅</td>
   </tr>
   <tr>
     <td>Kan ikke sette frist før "idag"</td>
     <td><img src="https://github.com/user-attachments/assets/1422c200-5be2-4eaf-95d2-8bfd43a51232"/></td>
-    <td></td>
-    <td>✅</td>
+    <td>Dette funket ikke, men jeg tror ikke det hadde tatt så veldig lang tid å fikse heller</td>
+    <td>❌</td>
   </tr>
   <tr>
     <td>Kan legge til notifikasjon</td>
     <td><img src="https://github.com/user-attachments/assets/7b7ea36f-b3e2-4f63-8117-196bfdfe1928"/></td>
-    <td></td>
+    <td>Det gikk fint ann å legge til en notifikasjon, og jeg ble automatisk "subscriber" av notifikasjonen</td>
     <td>✅</td>
   </tr>
   <tr>
     <td>Kan stoppe å følge notifikasjon</td>
     <td><img src="https://github.com/user-attachments/assets/737b95f2-25ae-4ed7-9f4d-93bc8b10ec18"/></td>
-    <td></td>
+    <td>Når jeg "unsubscriber" fra en notifikasjon, forsvinner notifikasjonen fra bjellen, som betyr at det funker</td>
     <td>✅</td>
   </tr>
   <tr>
     <td>Kan gå tilbake til lister</td>
     <td><img src="https://github.com/user-attachments/assets/989f5a67-6f4f-4bdd-9ace-d6fa041a5a4e"/></td>
-    <td></td>
+    <td>Å trykke "To Do Lists" tar deg tilbake til listene dine</td>
     <td>✅</td>
   </tr>
 </table>
