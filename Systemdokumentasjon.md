@@ -44,12 +44,21 @@ Triggere kjører sikkerhetssjekk omtrent likt som sikkerhets viewet til tabellen
 
 ## Arkitektur
 ### Frontend
-- Setup Apper (Tilgjengelig for de som har "To Do Setup Administrator" rollen)
-  - Severities - Her kan en legge til "Severities" som vises opp i lista når, i hovedappene, en velger en severity.
-  - States - Det samme som "Severities", bare for "States". Her har jeg inkludert to bit felter, som skal hjelpe på med hvordan ting skal sorteres, filtreres osv.
-- Hoved Apper (Tilgjengelig for de som har "To Do Customer" rollen)
-  - Lists - Dette er appen hvor en har en oversikt over alle listene. Det er også en oversikt over folk som har tilgang til lista og hva tilgang de har. Hvis en er på telefon, vil denne informasjonen vises som "kort", som gjør det lettere å observere på telefon. For PC, vil informasjonen vises i grid. I tillegg, siden PC har mye større skjerm, få "Tasks" appen ved siden av.
-  - Tasks - Her kan en lage, se, redigere og slette oppgaver. En kan også sette notifikasjoner på en oppgave (så lenge den har en frist), hvor en setter notifikasjonen til å bli aktiv så så lenge før fristen. Når notifikasjonen da er aktiv, vil den dukke opp i appen. I tillegg, vil "Lists" appen også få en notifikasjonsliste over lister som har en eller flere oppgaver som har en aktiv notifikasjon.
+Setup Apper (Tilgjengelig for de som har "To Do Setup Administrator" rollen):
+- Severities - Her kan en legge til "Severities" som vises opp i lista når, i hovedappene, en velger en severity.
+
+![image](https://github.com/user-attachments/assets/6d1e4f0e-78f6-4590-952e-e40ea57c6f40)
+- States - Det samme som "Severities", bare for "States". Her har jeg inkludert to bit felter, som skal hjelpe på med hvordan ting skal sorteres, filtreres osv.
+
+![image](https://github.com/user-attachments/assets/68c5663d-bd96-400e-ba86-d6b714b21366)
+
+Hoved Apper (Tilgjengelig for de som har "To Do Customer" rollen):
+- Lists - Dette er appen hvor en har en oversikt over alle listene. Det er også en oversikt over folk som har tilgang til lista og hva tilgang de har. Hvis en er på telefon, vil denne informasjonen vises som "kort", som gjør det lettere å observere på telefon. For PC, vil informasjonen vises i grid. I tillegg, siden PC har mye større skjerm, få "Tasks" appen ved siden av.
+
+![image](https://github.com/user-attachments/assets/b5eb1ab7-7f02-427f-8ecd-f61a8cce0eac)
+- Tasks - Her kan en lage, se, redigere og slette oppgaver. En kan også sette notifikasjoner på en oppgave (så lenge den har en frist), hvor en setter notifikasjonen til å bli aktiv så så lenge før fristen. Når notifikasjonen da er aktiv, vil den dukke opp i appen. I tillegg, vil "Lists" appen også få en notifikasjonsliste over lister som har en eller flere oppgaver som har en aktiv notifikasjon.
+
+![image](https://github.com/user-attachments/assets/3fdeb031-2390-40fa-95a9-f7a0d1aa7738)
 ### Backend (SQL)
 - Tabeller ([DrawSQL](https://drawsql.app/teams/omega365-1/diagrams/todo-list-end))
 ![image](https://github.com/user-attachments/assets/53679f87-a625-4ffe-ad8f-b88b7b63139a)
