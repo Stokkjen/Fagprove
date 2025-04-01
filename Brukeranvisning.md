@@ -1,5 +1,5 @@
 # Setups
-Bare Setup Administratorer har tilgang her.
+Bare Setup Administrator har tilgang her.
 ## Severities
 ### Oversikt
 I denne appen har du en oversikt over "Severities". Dette er da hvor kritisk noe er.
@@ -23,13 +23,13 @@ Hvis du vil, kan du se, og angre, fjernet "Severities". For å se de, trykker du
 ### Oversikt
 I denne appen har du en oversikt over "States". Dette er hvilken stat noe er. Det finnes "Is Concluded" og "Is Removed". Disse er egenskaper på staten, slik at appene vet hvordan den skal filtrere og sortere ting.
 
-![image](https://github.com/user-attachments/assets/215a6d8f-a09a-4376-98e5-9998a425459d)
+![image](https://github.com/user-attachments/assets/1bba1f9b-ce4e-4d90-b410-3f8aabb8de45)
 ### Legg til
 Hvis du trykker på pluss tegnet oppe til venstre i gridden, vil du få opp en ny rad. Da kan du fylle denne ut med navn og egenskaper.
 
-![image](https://github.com/user-attachments/assets/230a6f28-45d4-4f64-afba-18545bcef97f)
+![image](https://github.com/user-attachments/assets/508bd777-a9f2-4a00-babb-31ddad665559)
 
-![image](https://github.com/user-attachments/assets/cab0d65b-bce6-4b03-ae62-1d2c7698f7f4)
+![image](https://github.com/user-attachments/assets/80c01bb1-260f-484f-b6de-7c0b0e715534)
 # Hoved apper
 ## Lists
 ### 
