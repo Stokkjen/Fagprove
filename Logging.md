@@ -33,7 +33,10 @@
 ## 31.03.25 - Mandag
 - Fikset mange bugs / feil.
 - Lagt til ting som kan være nyttig.
-  - Hovedgreia her er "Erase," en ny knapp jeg har lagt til grunnet lovverk. En skal ha "retten til å bli glemt," så jeg har gjort slik at den som lager en liste får nå muligheten til å ta en full slett av hele lista. (Det kommer opp advarsel.)
+  - Hovedgreia her er "Erase," en ny knapp jeg har lagt til grunnet lovverk. Jeg har gjort slik at den som lager en liste får nå muligheten til å ta en full slett av hele lista. (Det kommer opp advarsel.)
 - Ryddet opp i koden.
 - Gjort en del testing.
 - Begynt litt på systemdokumentasjon.
+## 01.04.25 - Tirsdag
+- Fullført systemdokumentasjon.
+- Gått gjennom vurderingskriterier.
