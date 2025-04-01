@@ -28,19 +28,19 @@ Som bonus, har jeg også gjort slik at, hvis du vil, kan den som har laget liste
 
 ## Sikkerhet
 ### Capabilities
-Her har jeg brukt noe som vi kaller Capabilities. Jeg har to capabilities ("Can Administrate To Do Setup" og "Can Manage To Do Lists"). Disse kan du da legge til på en eller flere roller.
+Her har jeg brukt noe som vi kaller Capabilities. Jeg har to capabilities ("Can Administrate To Do Setup" og "Can Manage To Do Lists"). Disse kan du da legge til på en eller flere roller. Capabilities er tilganger til spesifikke ting. Jeg har brukt capabilities for å sjekke (hovedsaklig i triggere) om du har tilgang til å, for eksempel, jobbe med huskelister.
 ### Moduler
 Moduler har tilganger på tabeller (Read, Edit og Delete) og apper. Da har jeg laget to moduler ("To Do Customer" og "To Do Setup Administrator").
 ### Roller
 Disse rollene er det som gir tilgang til Capabilities og Moduler. Jeg har da to roller ("To Do Customer" og "To Do Setup Administrator", lik Modulene). Disse knytter en da på noe som heter Org Units, og en person.
 ### Org Units
-Dette er ikke veldig viktig for denne oppgaven, men simpelt forklart er dette en slags "lokasjon." Ved hjelpen av disse kan du da knytte roller til en person på en eller flere av disse lokasjonene. Jeg har da knyttet rollene på megselv for den øverste org uniten, altså 
+Dette er ikke veldig viktig for denne oppgaven, men simpelt forklart er dette en slags "lokasjon." Ved hjelpen av disse kan du da knytte roller til en person på en eller flere av disse lokasjonene.
 ### Custom view for tilganger
-I SQL er det innebygde views som tillatter deg lett å sjekke hvilke capabilities noen har tilgang til. Jeg har da laget et view ("MyCapabilities") som er spesifisert mot dette systemet, som gjør sikkerheten meget lett å håndtere.
+Omega har innebygde views i alle Omega databaser som tillatter deg lett å sjekke hvilke capabilities noen har tilgang til. Jeg har da laget et view ("MyCapabilities") som er spesifisert mot dette systemet, som gjør sikkerheten meget lett å håndtere.
 ### Sikkerhets view til tabeller
 Her sjekker jeg om du har tilgang til tabellen (via et annet innebygd view som returnerer alle tabeller du har tilgang til via modulene nevnt tidligere), og jeg sjekker også opp mot capabilities. Der blir det også litt mer custom basert på tabell.
 ### Triggere
-Triggere kjører sikkerhetssjekk omtrent likt som sikkerhets viewet til tabellene. Disse triggerene er da sjekker og logikk som kjører etter INSERT, UPDATE eller DELETE av data i spesifikke tabeller. Da må jeg, likt som i sikkerhets viewet til tabellene, legge til en sjekk på om du har tilgang til tabellen, men i tillegg til det, må jeg sjekke om de har Edit eller Delete permissions, kommer ann på hvilken trigger. Det er også masse custom greier her en kan legge til.
+Triggere kjører sikkerhetssjekk omtrent likt som sikkerhets viewet til tabellene. I disse triggerene kan du lage egen sikkerhetssjekker og logikk som kjøres etter INSERT, UPDATE eller DELETE av data.
 
 ## Arkitektur
 ### Frontend
@@ -55,18 +55,18 @@ Triggere kjører sikkerhetssjekk omtrent likt som sikkerhets viewet til tabellen
 ![image](https://github.com/user-attachments/assets/53679f87-a625-4ffe-ad8f-b88b7b63139a)
   - Lists - En oversikt over lister. Den har bare tittel, og et bitfelt som sier om listen er fjernet eller ikke.
   - Subscribers - Folk som har tilgang til lister, og hvilken tilgang.
-  - Tasks - Her står det informasjon om oppgaven, som tittel, beskrivelse og frist, og i tillegg kan du legge til en stat og alvorlighetsgrad.
-  - States - Her kan du sette en stat, som for eksempel: "To Do", "Deleted", "Finished" etc.
+  - Tasks - Her står det informasjon om oppgaven, som tittel, beskrivelse og frist, og i tillegg kan du legge til en state og severity.
+  - States - Her kan du sette en state, som for eksempel: "To Do", "Deleted", "Finished" etc.
   - Severities - Her ligger det alvorlighetsgrader, som for eksempel: "Critical", "Low", "High" etc.
   - Notifications - Her ligger alle notifikasjoner, altså notifikasjoner du kan legge til på en oppgave for å følge med på den.
   - NotificationSubscribers - Her kobler vi en person opp mot en notifikasjon. Så da kan flere ha samme notifikasjoner.
 - Views
-  - Lists - Denne velger fra "Lists" tabellen, men inkluderer for eksempel "ProgressPercentage", "IsCompleted", og noen andre kjekke ting som tilganger (i følge "Subscribers" tabellen)
+  - Lists - Denne velger fra "Lists" tabellen, men inkluderer for eksempel "ProgressPercentage", "IsCompleted", og hvilke tilganger du har for listen i følge "Subscribers" tabellen.
   - ListsNotifications - Dette viewet velger alle aktive notifikasjoner, og simplifiserer de til en per liste. Da kan du, i "Lists" appen, se alle lister som har en aktiv notifikasjon.
   - MyCapabilities - Alt denne gjør er å sjekke hvilke capabilities du har.
   - Notifications - Velger fra "Notifications" tabellen, men den bruker også "NotificationSubscribers" for å sjekke om du følger med på notifikasjonen.
   - Subscribers - Velger fra "Subscribers" tabellen, men inkluderer sjekker for om det er du som er subscriber, eller om subscriberen er den som har laget listen.
-  - Tasks - Velger rett fra "Tasks" tabellen, men inkluderer stat og alvorlighetsgrad, og har i tillegg en sjekk på om oppgaven er fjernet eller fullført.
+  - Tasks - Velger rett fra "Tasks" tabellen, men inkluderer state og severity, og har i tillegg en sjekk på om oppgaven er fjernet eller fullført.
   - TasksNotifications - Returnerer alle aktive notifikasjoner, og hvilken oppgave den tilhører.
 - Prosedyrer
   - EraseList - Jeg har lyst at hvis folk f.eks har sensitiv informasjon på en liste kan slette det fullstendig, så jeg har laget en prosedyre som sletter alt fra en liste.
