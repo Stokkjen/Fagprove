@@ -8,6 +8,7 @@ Spesielt for telefon, har jeg brukt "kort" for informasjon, hvor informasjonen k
 
 ## Lovverk
 Jeg har gjort slik at ting blir ikke slettet. Hvis du inviterer folk til huskelista di, kan de fjerne lista, men de kan ikke slette den. Du kan lett filtrere slik at du kan finne fjernet lister, og få listen tilbake.
+Som bonus, har jeg også gjort slik at, hvis du vil, kan den som har laget listen slette alt som ligger inni der. Dette ligner på "Retten til å bli glemt", men det handler hovedsaklig om personopplysninger. Dette er fortsatt viktig, siden det kan hende at noen har sensitiv informasjon i en liste.
 
 ## Teknologi
 ### Omega365 CTP (Core Technology Platform) rammeverk
