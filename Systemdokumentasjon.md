@@ -28,19 +28,19 @@ Som bonus, har jeg også gjort slik at, hvis du vil, kan den som har laget liste
 
 ## Sikkerhet
 ### Capabilities
-Her har jeg brukt noe som vi kaller Capabilities. Jeg har to capabilities. Disse kan du da legge til på en eller flere roller.
+Her har jeg brukt noe som vi kaller Capabilities. Jeg har to capabilities ("Can Administrate To Do Setup" og "Can Manage To Do Lists"). Disse kan du da legge til på en eller flere roller.
 ### Moduler
-Moduler har tilganger på tabeller og apper. Da har jeg laget to moduler. Som nevnt så kan du også gi tilgang til tabeller (Read, Edit og Delete).
+Moduler har tilganger på tabeller (Read, Edit og Delete) og apper. Da har jeg laget to moduler ("To Do Customer" og "To Do Setup Administrator").
 ### Roller
-Disse rollene er det som knytter Capabilities og Moduler til ett. Jeg har da to roller (lik Modulene). Disse knytter en da på noe som heter Org Units, og en person.
+Disse rollene er det som gir tilgang til Capabilities og Moduler. Jeg har da to roller ("To Do Customer" og "To Do Setup Administrator", lik Modulene). Disse knytter en da på noe som heter Org Units, og en person.
 ### Org Units
-Dette er ikke veldig viktig for denne oppgaven, men simpelt forklart er dette en slags "lokasjon." Ved hjelpen av disse kan du da knytte roller til en person på en eller flere av disse lokasjonene.
+Dette er ikke veldig viktig for denne oppgaven, men simpelt forklart er dette en slags "lokasjon." Ved hjelpen av disse kan du da knytte roller til en person på en eller flere av disse lokasjonene. Jeg har da knyttet rollene på megselv for den øverste org uniten, altså 
 ### Custom view for tilganger
-I SQL er det innebygde views som tillatter deg lett å sjekke hvilke capabilities noen har tilgang til. Jeg har da laget et view som er spesifisert mot dette systemet, som gjør sikkerheten meget lett å håndtere.
+I SQL er det innebygde views som tillatter deg lett å sjekke hvilke capabilities noen har tilgang til. Jeg har da laget et view ("MyCapabilities") som er spesifisert mot dette systemet, som gjør sikkerheten meget lett å håndtere.
 ### Sikkerhets view til tabeller
 Her sjekker jeg om du har tilgang til tabellen (via et annet innebygd view som returnerer alle tabeller du har tilgang til via modulene nevnt tidligere), og jeg sjekker også opp mot capabilities. Der blir det også litt mer custom basert på tabell.
 ### Triggere
-Triggere kjører sikkerhetssjekk omtrent likt som sikkerhets viewet til tabellene. Disse triggerene er da sjekker og logikk som kjører etter INSERT, UPDATE eller DELETE av data i spesifikke tabeller. Da må jeg, likt som i sikkerhets viewet til tabellene, legge til en sjekk på om du har tilgang til tabellen, men i tillegg til det, må jeg sjekke om de har Edit eller Delete permissions, kommer ann på hvilken trigger.
+Triggere kjører sikkerhetssjekk omtrent likt som sikkerhets viewet til tabellene. Disse triggerene er da sjekker og logikk som kjører etter INSERT, UPDATE eller DELETE av data i spesifikke tabeller. Da må jeg, likt som i sikkerhets viewet til tabellene, legge til en sjekk på om du har tilgang til tabellen, men i tillegg til det, må jeg sjekke om de har Edit eller Delete permissions, kommer ann på hvilken trigger. Det er også masse custom greier her en kan legge til.
 
 ## Arkitektur
 ### Frontend
