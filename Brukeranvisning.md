@@ -137,38 +137,38 @@ For å åpne en liste, trykker du "Open List" knappen på listen du vil åpne.
 ![image](https://github.com/user-attachments/assets/6b349f7b-0ff9-4f18-b73e-bec6295798c7)
 ## Tasks
 ### Oversikt
-DESCRIPTION
+Her får du se alle oppgavene i listen du har valgt. Datoen ved siden av oppgave tittelen er fristen.
 
 ![image](https://github.com/user-attachments/assets/7afbbfb6-7b38-4829-8333-513c2cd30b0a)
 ### Legg Til
-DESCRIPTION
+For å legge til en oppgave, skriver du inn tittel under "New Task", og trykker "Create" knappen ved siden av.
 
 ![image](https://github.com/user-attachments/assets/6a8bbab0-88d9-41a8-8fca-8d4f880baaba)
 ### Rediger
-DESCRIPTION
+For å redigere en oppgave, trykker du "Open Task" knappen under tittelen på oppgaven du vil endre.
 
 ![image](https://github.com/user-attachments/assets/8539f5c0-2cb8-46fc-bbf5-68873924c077)
 
-![image](https://github.com/user-attachments/assets/563c860d-f261-473f-889b-401d22f60ce6)
+![image](https://github.com/user-attachments/assets/dfc409d1-4900-4d5f-8cc7-0e0a4f041d02)
 ### Inkluder
-DESCRIPTION
+For å inkludere fullførte og fjernet oppgaver, trykker du på "Include Completed" og/eller "Include Removed". Du vil da kunne se hvilke oppgaver er fullført og hvilke er fjernet.
 
 ![image](https://github.com/user-attachments/assets/599d6838-1010-4d39-b1d8-af96eebbcd0d)
 ### Notifikasjoner
-DESCRIPTION
+For å legge til og følge med på notifikasjoner, trykker du "Manage Notifications" knappen under oppgaven. Denne knappen dukker bare opp når du har en frist på den.
 
 ![image](https://github.com/user-attachments/assets/5b28e3b1-e1ba-4795-86f0-b756d4dbbaba)
 ### Legg Til Notifikasjon
-DESCRIPTION
+For å legge til en notifikasjon, skriver du inn antall dager og timer før fristen du vil at notifikasjonen skal aktiveres, og trykker "Create". Du vil automatisk følge denne notifikasjonen. Hvis det allerede finnes en notifikasjon du vil følge kan du trykke "Subscribe" knappen på den notifikasjonen. Hvis du ikke vil følge en notifikasjon, trykker du "Unsubscribe" knappen.
 
 ![image](https://github.com/user-attachments/assets/8df05e90-f01a-4f04-abc9-477126d03a45)
 ### Aktive Notifikasjoner
-DESCRIPTION
+For å se aktive notifikasjoner, trykker du bjellen oppe til høyre i appen. Da vil du få opp informasjon om alle oppgaver som har en aktiv notifikasjon som du følger. Datoen som dukker opp er fristen, og det som står i parantes er alvorlighetsgrad til oppgaven.
 
 ![image](https://github.com/user-attachments/assets/b25108c0-246c-49e6-bc1f-ce2a658e3c0e)
 
 ![image](https://github.com/user-attachments/assets/64c69550-1dd3-4b1e-8b99-187f22d850d3)
-### Gå Tilbake Til Lister
-DESCRIPTION
+### Gå Tilbake Til Lister (Mobil)
+For å gå tilbake til listene, trykker du på "To Do Lists" knappen.
 
 ![image](https://github.com/user-attachments/assets/451ac6bd-a062-4b3b-9cbb-e6d044869459)
