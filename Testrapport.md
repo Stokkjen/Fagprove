@@ -14,7 +14,7 @@
   <tr>
     <td>Fjernet skjules i lookups</td>
     <td><img src="https://github.com/user-attachments/assets/d701d73c-50d9-481e-9c11-d9853ba8fac1"/></td>
-    <td>Når en alvorlighetsgrad er fjernet, skjules den som et valg i appene</td>
+    <td>Når jeg fjernet "Very Low" alvorlighetsgraden, vises den ikke som et valg i appene</td>
     <td>✅</td>
   </tr>
   <tr>
