@@ -40,3 +40,5 @@
 ## 01.04.25 - Tirsdag
 - Fullført systemdokumentasjon.
 - Gått gjennom vurderingskriterier.
+- Fullført brukeranvisning.
+- Fullført testrapport.
