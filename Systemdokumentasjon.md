@@ -70,13 +70,17 @@ Triggere kjører sikkerhetssjekk omtrent likt som sikkerhets viewet til tabellen
   - Tasks - Velger rett fra "Tasks" tabellen, men inkluderer stat og alvorlighetsgrad, og har i tillegg en sjekk på om oppgaven er fjernet eller fullført.
   - TasksNotifications - Returnerer alle aktive notifikasjoner, og hvilken oppgave den tilhører.
 - Prosedyrer
-  - EraseList - Med tanke på "rett til å bli glemt", har jeg laget en prosedyre som sletter alt fra en liste.
+  - EraseList - Jeg har lyst at hvis folk f.eks har sensitiv informasjon på en liste kan slette det fullstendig, så jeg har laget en prosedyre som sletter alt fra en liste.
   - SendNotifications - Ubrukt grunnet manglet forståelse, men virker. Denne skulle bli kjørt av en jobb hver time, som sjekker om det er noen nye notifikasjoner tilgjengelig. Hvis det er det, så sender den det ut på mail til alle som har valgt å følge med på notifikasjonen. Men igjen, hvordan ting faktisk funker bak vet jeg ikke nok av, så jeg byttet dette ut med bjellene i appen.
 
 ## Avvik og hindringer
 For backend holdt jeg meg godt til planen. Det ble noen ting ekstra jeg måtte gjøre, men jeg vil ikke si det var noen avvik, og det ble ikke mange hindringer. Men, i frontend, ble det mange hindringer, og ting ser helt annerledes ut for telefon enn i planen min.
 - Det ble mange flere views enn planlagt i planen. Dette var nødvendig for å vise nyttig informasjon.
-- I selve appen hadde jeg planlagt å alt i en app (utenom setup appene). Jeg dele hele greia i to apper, altså en for listene, og en for oppgavene.
+- I selve appen hadde jeg planlagt å få alt i bare en app (utenom setup appene). Jeg delte hele greia i to apper, altså en for listene, og en for oppgavene. Dette var litt for å gjøre ting simplere, og lettere spesielt på telefon, siden i stedenfor å skifte tabs eller åpne en modal eller noe greier, må de bare trykke en knapp, så kommer de der de skal.
+- Jeg brukte kort i stedenfor grids for telefon. Dette er en ganske nødvendig endring da, spesielt på telefon, siden det er mye mer oversiktlig.
+- Det tok altfor lang tid med frontenden. Til slutt endet jeg med et OK system, som skal virke, men som kan være forvirrende.
+- Jeg tok tiden min til å lage notifikasjoner som ble sendt ut på mail til punktet hvor det virket, men siden det var hull i min forståelse rundt det, skrudde jeg dette av.
+  - All tiden ble ikke bortkastet da, siden jeg tok litt av "SendNotifications" prosedyren, og gjorde det om til to views: "ListsNotifications" og "TasksNotifications", som blir brukt til notifikasjoner i appen.
 
 ## Planen videre
 - Hvis en person har fullført en oppgave som har en aktiv notifikasjon, vil jeg at alle som hadde meldt seg på den notifikasjonen skal få en ny notifikasjon hvor det står at noen fullførte det. Jeg hadde en ide for dette som involverer en cache tabell, men fikk ikke tid.
