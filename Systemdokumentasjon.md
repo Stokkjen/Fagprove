@@ -46,14 +46,13 @@ Triggere kjører sikkerhetssjekk omtrent likt som sikkerhets viewet til tabellen
 ### Frontend
 - Setup Apper (Tilgjengelig for de som har "To Do Setup Administrator" rollen)
   - Severities - Her kan en legge til "Severities" som vises opp i lista når, i hovedappene, en velger en severity.
-    - "Severities" er for eksempel: "Critical", "Low", "High" etc.
-  - States - Det samme som "Severities", bare for "States".
-    - "States" er for eksempel: "To Do", "Deleted", "Finished" etc.
+  - States - Det samme som "Severities", bare for "States". Her har jeg inkludert to bit felter, som skal hjelpe på med hvordan ting skal sorteres, filtreres osv.
 - Hoved Apper (Tilgjengelig for de som har "To Do Customer" rollen)
   - Lists - Dette er appen hvor en har en oversikt over alle listene. Det er også en oversikt over folk som har tilgang til lista og hva tilgang de har. Hvis en er på telefon, vil denne informasjonen vises som "kort", som gjør det lettere å observere på telefon. For PC, vil informasjonen vises i grid. I tillegg, siden PC har mye større skjerm, få "Tasks" appen ved siden av.
   - Tasks - Her kan en lage, se, redigere og slette oppgaver. En kan også sette notifikasjoner på en oppgave (så lenge den har en frist), hvor en setter notifikasjonen til å bli aktiv så så lenge før fristen. Når notifikasjonen da er aktiv, vil den dukke opp i appen. I tillegg, vil "Lists" appen også få en notifikasjonsliste over lister som har en eller flere oppgaver som har en aktiv notifikasjon.
 ### Backend (SQL)
-- Tabeller
+- Tabeller ([DrawSQL](https://drawsql.app/teams/omega365-1/diagrams/todo-list-end))
+![image](https://github.com/user-attachments/assets/53679f87-a625-4ffe-ad8f-b88b7b63139a)
   - Lists - En oversikt over lister. Den har bare tittel, og et bitfelt som sier om listen er fjernet eller ikke.
   - Subscribers - Folk som har tilgang til lister, og hvilken tilgang.
   - Tasks - Her står det informasjon om oppgaven, som tittel, beskrivelse og frist, og i tillegg kan du legge til en stat og alvorlighetsgrad.
